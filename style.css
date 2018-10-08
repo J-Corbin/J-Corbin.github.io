@@ -140,6 +140,12 @@ ol li
 
 #menu ul{margin: 0px auto;} 
 
+#button {
+    position:absolute;
+    transition: .5s ease;
+    top: 50%;
+    left: 50%;
+}
 #menu li
 { float: left; 
   margin: 0px 5px 0px 0px; 
