@@ -1,46 +1,56 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html>
-
 <head>
-  <title>Becca's Surprise</title>
-  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
-
-  <!-- **** layout stylesheet **** -->
-  <link rel="stylesheet" type="text/css" href="style.css" />
-
-  <!-- **** colour scheme stylesheet **** -->
-  <link rel="stylesheet" type="text/css" href="blue.css" />
-
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Becca's Surprise</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<script src="js/mobile.js" type="text/javascript"></script>
 </head>
-
 <body>
-    <SCRIPT>
-function passWord() {
-var testV = 1;
-var pass1 = prompt('Please Enter Your Password',' ');
-while (testV < 3) {
-if (!pass1)
-history.go(-1);
-if (pass1.toLowerCase() == "lynn") {
-alert('Correct password');
-window.open('https://j-corbin.github.io/home');
-break;
-}
-testV+=1;
-var pass1 =
-prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
-}
-if (pass1.toLowerCase()!="password" & testV ==3)
-history.go(-1);
-return " ";
-}
-    </SCRIPT>
-    <CENTER>
-        <FORM>
-            <div style="width:100%;height:100%;position:absolute;vertical-align:middle;text-align:center;">
-            <input type="button" value="Enter Website" onClick="passWord()">
-                </div>
-        </FORM>
-    </CENTER>
+	<div id="page">
+		<div id="header">
+			<div id="navigation">
+				<span id="mobile-navigation">&nbsp;</span>
+				<a href="index.html" class="logo"><img src="images/Logo.png" alt=""></a>
+				<ul id="menu">
+					<li class="selected">
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="letters.html">Letters</a>
+					</li>
+					<li>
+						<a href="places.html">Places</a>
+					</li>
+					<li>
+						<a href="surprise.html">Surprise</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="body" class="home">
+			<div class="header">
+				<div>
+					<h1>Dear Rebecca</h1>
+					<img src="images/runner.jpg" alt="">
+				</div>
+			</div>
+			<div class="body">
+				<div>
+					<h1>Happy Birthday(ish)</h1>
+					<p>Hey friend, if you're reading this it's probably somewhere near your birthday. So, surprise! I told you I would deliver something unique.</p>
+                    <p>There's a lot here (depending on how much I finish.) I'll let you explore the sections at your own pace. Make sure to read through everything.</p>
+                    <p>Keep in mind how important you are to me, life wouldn't be the same without you.</p>
+				</div>
+			</div>
+		</div>
+        <div id="footer">
+            <div>
+                <p>Love you Becca.</p>
+            </div>
+        </div>
+	</div>
 </body>
 </html>
